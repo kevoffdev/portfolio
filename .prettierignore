@@ -1,0 +1,10 @@
+node_modules/*
+package-lock.json
+yarn.lock
+src/*.ts
+src/index.html
+src/environments/*.ts
+.next
+public
+next-env.d.ts
+node_modules
