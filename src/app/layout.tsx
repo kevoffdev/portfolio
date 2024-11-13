@@ -1,4 +1,10 @@
 import type { Metadata } from 'next';
+
+import Left from '@/components/aside/Left';
+import Right from '@/components/aside/Right';
+
+import { spaceGrotesk } from '@/lib/fonts';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -13,7 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`${spaceGrotesk.className} grid min-h-screen grid-cols-[230px,1fr,230px] antialiased`}>
+        <Left />
+        <div className="border-x border-primary">
+          <header className="border-b border-primary px-10 py-6 font-medium">
+            <ul className="flex items-center justify-between">
+              <li className="rounded-xl bg-primary px-4 py-2 text-lg font-normal opacity-70">Available For Work</li>
+              <li className="">Time</li>
+            </ul>
+          </header>
+          {children}
+        </div>
+        <Right />
+      </body>
     </html>
   );
 }

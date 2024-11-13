@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
+  --foreground: rgb(18, 18, 18);
+  --secondary: rgb(117, 142, 175);
+  --primary: rgb(25, 25, 25);
+
   color-scheme: dark;
   color: CanvasText;
-  background-color: Canvas;
+  background-color: rgb(1 0 1 / 1);
 }
