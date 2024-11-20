@@ -1,21 +1,18 @@
-import { HiOutlineEnvelope, HiOutlineHome, HiOutlineSquare3Stack3D } from 'react-icons/hi2';
-import { SiGithub, SiLinkedin, SiX } from 'react-icons/si';
+import { BsPersonCheck } from 'react-icons/bs';
+import { HiOutlineSquare3Stack3D } from 'react-icons/hi2';
+import { SiGithub, SiLinkedin, SiNextdotjs, SiTailwindcss, SiTypescript, SiReact } from 'react-icons/si';
+import { TbFileCv } from 'react-icons/tb';
 
 export const ROUTES = [
   {
-    icon: <HiOutlineHome className="group-hover:text-subtext transition-colors" />,
-    name: 'Home',
-    href: '/',
-  },
-  {
     icon: <HiOutlineSquare3Stack3D className="group-hover:text-subtext transition-colors" />,
-    name: 'Projects',
-    href: '/projects',
+    name: 'Proyectos',
+    href: '#proyectos',
   },
   {
-    icon: <HiOutlineEnvelope className="transition-colors" />,
-    name: 'contact',
-    href: '/contact',
+    icon: <BsPersonCheck className="group-hover:text-subtext transition-colors" />,
+    name: 'Sobre mí',
+    href: '#sobre-mi',
   },
 ];
 
@@ -26,13 +23,31 @@ export const SOCIALS = [
     href: 'https://github.com/kevoffdev',
   },
   {
-    icon: <SiX />,
-    name: 'X',
-    href: 'https://x.com/Kevoffdev',
+    icon: <TbFileCv />,
+    name: 'CV',
+    href: 'https://drive.google.com/file/d/1M59w95ThGqWqW1RdlYnQ7KkrnU_CSGOM/view',
   },
   {
     icon: <SiLinkedin />,
     name: 'Linkedin',
     href: 'https://www.linkedin.com/in/kevin-suvia-cruz-528476293/',
+  },
+];
+
+export const PROJECTS = [
+  {
+    img: '/images/uizard-news.png',
+    title: 'Uizard Hacerknews',
+    titleUrlPage: 'uizard-hackernews.vercel',
+    urlPage: 'https://uizard-challenge-virid.vercel.app/',
+    urlCode: 'https://github.com/kevoffdev/uizard-challenge',
+    description:
+      'Plataforma para leer articulos al azar relacionados con tecnología, startups, ciencia y programación. Creado desde cero con Next.js, React y Tailwind CSS.',
+    tools: [
+      { icon: <SiNextdotjs />, title: 'Next.js', url: 'https://nextjs.org/' },
+      { icon: <SiReact />, title: 'React', url: 'https://es.react.dev/' },
+      { icon: <SiTypescript />, title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { icon: <SiTailwindcss />, title: 'TailwindCSS', url: 'https://tailwindcss.com/' },
+    ],
   },
 ];

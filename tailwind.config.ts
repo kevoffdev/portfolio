@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         background: 'rgb(1 0 1 / 1)',
-        secondary: 'rgb(117,142,175)',
+        secondary: 'rgb(105, 152, 212)',
         foreground: 'rgb(18,18,18)',
         primary: 'rgb(33,34,34)',
       },
