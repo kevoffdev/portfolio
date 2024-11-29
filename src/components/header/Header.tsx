@@ -3,7 +3,7 @@ import ArgentinaTime from './TimeZone';
 
 const Header = () => {
   return (
-    <header className="border-b border-primary px-10 py-6 font-medium">
+    <header className="hidden border-b border-primary px-10 py-6 font-medium xl:block">
       <ul className="flex items-center justify-between">
         <li className="flex items-center gap-4 rounded-xl bg-primary px-4 py-2 text-lg font-normal">
           <PingIcon />
