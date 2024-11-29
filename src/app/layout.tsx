@@ -21,9 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} grid min-h-screen grid-cols-[230px,1fr,230px] antialiased`}>
+      <body
+        className={`${spaceGrotesk.className} grid min-h-screen grid-rows-[auto,1fr,auto] bg-black antialiased xl:max-w-full xl:grid-cols-[185px,1fr,185px] xl:grid-rows-1 2xl:grid-cols-[230px,1fr,230px]`}
+      >
         <Left />
-        <div className="border-x border-primary">
+        <div className="xl:border-x xl:border-primary">
           <Header />
           {children}
           <Footer />
