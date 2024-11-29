@@ -1,6 +1,6 @@
 import { BsPersonCheck } from 'react-icons/bs';
 import { HiOutlineSquare3Stack3D } from 'react-icons/hi2';
-import { SiGithub, SiLinkedin, SiNextdotjs, SiTailwindcss, SiTypescript, SiReact } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiNextdotjs, SiTailwindcss, SiTypescript, SiReact, SiShadcnui } from 'react-icons/si';
 import { TbFileCv } from 'react-icons/tb';
 
 export const ROUTES = [
@@ -36,7 +36,22 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
-    img: '/images/uizard-news.png',
+    img: '/images/shopping-cart.png',
+    title: 'Shopping cart',
+    titleUrlPage: 'shopping-cart.vercel',
+    urlPage: 'https://shopping-cart-jet-zeta.vercel.app/',
+    urlCode: 'https://github.com/kevoffdev/shopping-cart',
+    description:
+      'Plataforma para ver distintos productos como perfumes, muebles, comida con carrito de compras. Creado desde cero con React, TypeScript y Tailwind CSS.',
+    tools: [
+      { icon: <SiReact />, title: 'React', url: 'https://es.react.dev/' },
+      { icon: <SiTypescript />, title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { icon: <SiTailwindcss />, title: 'TailwindCSS', url: 'https://tailwindcss.com/' },
+      { icon: <SiShadcnui />, title: 'Shadcn', url: 'https://ui.shadcn.com/' },
+    ],
+  },
+  {
+    img: '/images/uizard-hackernews.png',
     title: 'Uizard Hacerknews',
     titleUrlPage: 'uizard-hackernews.vercel',
     urlPage: 'https://uizard-challenge-virid.vercel.app/',
