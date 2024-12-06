@@ -1,6 +1,16 @@
 import { BsPersonCheck } from 'react-icons/bs';
 import { HiOutlineSquare3Stack3D } from 'react-icons/hi2';
-import { SiGithub, SiLinkedin, SiNextdotjs, SiTailwindcss, SiTypescript, SiReact, SiShadcnui } from 'react-icons/si';
+import {
+  SiGithub,
+  SiLinkedin,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiReact,
+  SiShadcnui,
+  SiAngular,
+  SiCss3,
+} from 'react-icons/si';
 import { TbFileCv } from 'react-icons/tb';
 
 export const ROUTES = [
@@ -25,7 +35,7 @@ export const SOCIALS = [
   {
     icon: <TbFileCv />,
     name: 'CV',
-    href: 'https://drive.google.com/file/d/1M59w95ThGqWqW1RdlYnQ7KkrnU_CSGOM/view',
+    href: 'https://drive.google.com/file/d/1DU52zMy_jGTu_aeWWSFaeyTt83QralXO/view',
   },
   {
     icon: <SiLinkedin />,
@@ -36,7 +46,7 @@ export const SOCIALS = [
 
 export const PROJECTS = [
   {
-    img: '/images/shopping-cart.png',
+    img: '/images/shopping-cart.webp',
     title: 'Shopping cart',
     titleUrlPage: 'shopping-cart.vercel',
     urlPage: 'https://shopping-cart-jet-zeta.vercel.app/',
@@ -51,8 +61,8 @@ export const PROJECTS = [
     ],
   },
   {
-    img: '/images/uizard-hackernews.png',
-    title: 'Uizard Hacerknews',
+    img: '/images/uizard-hackernews.webp',
+    title: 'Uizard Hackernews',
     titleUrlPage: 'uizard-hackernews.vercel',
     urlPage: 'https://uizard-challenge-virid.vercel.app/',
     urlCode: 'https://github.com/kevoffdev/uizard-challenge',
@@ -63,6 +73,20 @@ export const PROJECTS = [
       { icon: <SiReact />, title: 'React', url: 'https://es.react.dev/' },
       { icon: <SiTypescript />, title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
       { icon: <SiTailwindcss />, title: 'TailwindCSS', url: 'https://tailwindcss.com/' },
+    ],
+  },
+  {
+    img: '/images/memory-game-dbz.webp',
+    title: 'DBZ Memory game',
+    titleUrlPage: 'dbz-memory-game.netifly.app',
+    urlPage: 'https://dbz-memory-game.netlify.app/',
+    urlCode: 'https://github.com/kevoffdev/memory-game-angular',
+    description:
+      'El objetivo del juego es encontrar y emparejar las cartas con los mismos personajes de DBZ cuando se hace un match correcto estas quedan visibles. Creado desde cero con Anuglar y SCSS.',
+    tools: [
+      { icon: <SiAngular />, title: 'Angular', url: 'https://angular.dev/' },
+      { icon: <SiTypescript />, title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { icon: <SiCss3 />, title: 'Css3', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
     ],
   },
 ];

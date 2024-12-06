@@ -16,9 +16,9 @@ const Left = () => {
   }, [params]);
   return (
     <aside className="sticky top-0 z-50 m-auto flex w-full max-w-[920px] justify-center bg-black px-2 py-5 pt-10 xl:m-0 xl:h-screen xl:w-full xl:flex-col xl:items-end xl:justify-between xl:border-none xl:py-10 xl:pr-8">
-      <Link href="/" className="hidden aspect-square overflow-hidden rounded-full border-2 border-secondary xl:block">
+      <Link href="/" className="hidden aspect-square overflow-hidden rounded-full border-secondary xl:block">
         <img
-          src="/images/kevin.jpg"
+          src="/images/kevin-cruz.webp"
           title="Kevin Cruz"
           alt="Foto de Kevin"
           width="60"

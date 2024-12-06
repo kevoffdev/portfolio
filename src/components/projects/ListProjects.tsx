@@ -17,8 +17,12 @@ const ListProjects = () => {
             key={index}
             className="grid grid-cols-1 gap-8 rounded-lg border border-primary bg-foreground/50 p-6 xl:grid-cols-2"
           >
-            <a href={project.urlPage} target="_blank" className="rounded-xl hover:opacity-90">
-              <img src={project.img} className="h-60 w-full rounded-xl object-cover" alt={project.title} />
+            <a href={project.urlPage} target="_blank" className="rounded-xl hover:opacity-80">
+              <img
+                src={project.img}
+                className="h-60 w-full rounded-xl object-contain xl:object-cover"
+                alt={project.title}
+              />
             </a>
             <div className="flex flex-col justify-between gap-2">
               <h3 className="text-2xl font-bold">{project.title}</h3>
@@ -37,7 +41,7 @@ const ListProjects = () => {
                   target="_blank"
                 >
                   <SiGithub />
-                  Code
+                  <span className="">Code</span>
                 </a>
               </footer>
               <p className="text-gray-400">{project.description}</p>
@@ -62,7 +66,3 @@ const ListProjects = () => {
 };
 
 export default ListProjects;
-
-{
-  /* <SiTailwindcss className="text-xl opacity-70" /> */
-}
