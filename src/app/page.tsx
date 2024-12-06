@@ -20,7 +20,7 @@ export default function Home() {
         <article className="my-5 flex flex-col gap-6 xl:my-10 xl:flex-row">
           <div className="flex w-full items-center justify-start gap-3 sm:justify-center">
             <img
-              src="/images/kevin.jpg"
+              src="/images/kevin-cruz.webp"
               title="Kevin Cruz"
               alt="Foto de Kevin"
               className="h-[130px] w-[130px] rounded-xl object-cover xl:h-[250px] xl:w-[230px] xl:rounded-none"
@@ -51,13 +51,13 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-4 xl:flex-row xl:gap-14">
-              <Link
-                href={'/contact'}
+              <a
+                href="mailto:kevinsuviacruz@gmail.com"
                 className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-primary bg-foreground p-2 text-lg transition-colors hover:border-secondary hover:text-secondary"
               >
                 <HiOutlineEnvelope />
                 <span className="">Contáctame</span>
-              </Link>
+              </a>
               <Link
                 href={'#proyectos'}
                 className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-primary bg-foreground p-2 text-lg transition-colors hover:border-secondary hover:text-secondary"
